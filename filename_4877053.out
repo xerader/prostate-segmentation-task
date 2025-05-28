@@ -33,3 +33,304 @@ a01.hpcc.dartmouth.edu
 Running Python
 CUDA_VISIBLE_DEVICES: MIG-efcc6a50-e03b-5374-9d1c-3c45d6910bfc
 Running UNET model
+using device: cuda
+Processing ./data/HK/processed/Case48.nii and ./data/HK/processed/Case48_segmentation.nii
+Processing ./data/HK/processed/Case49.nii and ./data/HK/processed/Case49_segmentation.nii
+Processing ./data/HK/processed/Case47.nii and ./data/HK/processed/Case47_segmentation.nii
+Processing ./data/HK/processed/Case39.nii and ./data/HK/processed/Case39_segmentation.nii
+Processing ./data/HK/processed/Case46.nii and ./data/HK/processed/Case46_segmentation.nii
+Processing ./data/HK/processed/Case42.nii and ./data/HK/processed/Case42_segmentation.nii
+Processing ./data/HK/processed/Case38.nii and ./data/HK/processed/Case38_segmentation.nii
+Processing ./data/HK/processed/Case44.nii and ./data/HK/processed/Case44_segmentation.nii
+Processing ./data/HK/processed/Case41.nii and ./data/HK/processed/Case41_segmentation.nii
+Processing ./data/HK/processed/Case40.nii and ./data/HK/processed/Case40_segmentation.nii
+Processing ./data/HK/processed/Case43.nii and ./data/HK/processed/Case43_segmentation.nii
+Processing ./data/HK/processed/Case45.nii and ./data/HK/processed/Case45_segmentation.nii
+Processing ./data/I2CVB/processed/Case11.nii and ./data/I2CVB/processed/Case11_segmentation.nii
+Processing ./data/I2CVB/processed/Case09.nii and ./data/I2CVB/processed/Case09_segmentation.nii
+Processing ./data/I2CVB/processed/Case02.nii and ./data/I2CVB/processed/Case02_segmentation.nii
+Processing ./data/I2CVB/processed/Case05.nii and ./data/I2CVB/processed/Case05_segmentation.nii
+Processing ./data/I2CVB/processed/Case17.nii and ./data/I2CVB/processed/Case17_segmentation.nii
+Processing ./data/I2CVB/processed/Case18.nii and ./data/I2CVB/processed/Case18_segmentation.nii
+Processing ./data/I2CVB/processed/Case07.nii and ./data/I2CVB/processed/Case07_segmentation.nii
+Processing ./data/I2CVB/processed/Case13.nii and ./data/I2CVB/processed/Case13_segmentation.nii
+Processing ./data/I2CVB/processed/Case03.nii and ./data/I2CVB/processed/Case03_segmentation.nii
+Processing ./data/I2CVB/processed/Case15.nii and ./data/I2CVB/processed/Case15_segmentation.nii
+Processing ./data/I2CVB/processed/Case00.nii and ./data/I2CVB/processed/Case00_segmentation.nii
+Processing ./data/I2CVB/processed/Case08.nii and ./data/I2CVB/processed/Case08_segmentation.nii
+Processing ./data/I2CVB/processed/Case12.nii and ./data/I2CVB/processed/Case12_segmentation.nii
+Processing ./data/I2CVB/processed/Case01.nii and ./data/I2CVB/processed/Case01_segmentation.nii
+Processing ./data/I2CVB/processed/Case04.nii and ./data/I2CVB/processed/Case04_segmentation.nii
+Processing ./data/I2CVB/processed/Case14.nii and ./data/I2CVB/processed/Case14_segmentation.nii
+Processing ./data/I2CVB/processed/Case06.nii and ./data/I2CVB/processed/Case06_segmentation.nii
+Processing ./data/I2CVB/processed/Case16.nii and ./data/I2CVB/processed/Case16_segmentation.nii
+Processing ./data/I2CVB/processed/Case10.nii and ./data/I2CVB/processed/Case10_segmentation.nii
+Processing ./data/RUNMC/processed/Case20.nii and ./data/RUNMC/processed/Case20_segmentation.nii
+Processing ./data/RUNMC/processed/Case11.nii and ./data/RUNMC/processed/Case11_segmentation.nii
+Processing ./data/RUNMC/processed/Case09.nii and ./data/RUNMC/processed/Case09_segmentation.nii
+Processing ./data/RUNMC/processed/Case02.nii and ./data/RUNMC/processed/Case02_segmentation.nii
+Processing ./data/RUNMC/processed/Case27.nii and ./data/RUNMC/processed/Case27_segmentation.nii
+Processing ./data/RUNMC/processed/Case26.nii and ./data/RUNMC/processed/Case26_segmentation.nii
+Processing ./data/RUNMC/processed/Case05.nii and ./data/RUNMC/processed/Case05_segmentation.nii
+Processing ./data/RUNMC/processed/Case17.nii and ./data/RUNMC/processed/Case17_segmentation.nii
+Processing ./data/RUNMC/processed/Case18.nii and ./data/RUNMC/processed/Case18_segmentation.nii
+Processing ./data/RUNMC/processed/Case07.nii and ./data/RUNMC/processed/Case07_segmentation.nii
+Processing ./data/RUNMC/processed/Case22.nii and ./data/RUNMC/processed/Case22_segmentation.nii
+Processing ./data/RUNMC/processed/Case19.nii and ./data/RUNMC/processed/Case19_segmentation.nii
+Processing ./data/RUNMC/processed/Case13.nii and ./data/RUNMC/processed/Case13_segmentation.nii
+Processing ./data/RUNMC/processed/Case03.nii and ./data/RUNMC/processed/Case03_segmentation.nii
+Processing ./data/RUNMC/processed/Case23.nii and ./data/RUNMC/processed/Case23_segmentation.nii
+Processing ./data/RUNMC/processed/Case24.nii and ./data/RUNMC/processed/Case24_segmentation.nii
+Processing ./data/RUNMC/processed/Case29.nii and ./data/RUNMC/processed/Case29_segmentation.nii
+Processing ./data/RUNMC/processed/Case15.nii and ./data/RUNMC/processed/Case15_segmentation.nii
+Processing ./data/RUNMC/processed/Case00.nii and ./data/RUNMC/processed/Case00_segmentation.nii
+Processing ./data/RUNMC/processed/Case28.nii and ./data/RUNMC/processed/Case28_segmentation.nii
+Processing ./data/RUNMC/processed/Case25.nii and ./data/RUNMC/processed/Case25_segmentation.nii
+Processing ./data/RUNMC/processed/Case21.nii and ./data/RUNMC/processed/Case21_segmentation.nii
+Processing ./data/RUNMC/processed/Case08.nii and ./data/RUNMC/processed/Case08_segmentation.nii
+Processing ./data/RUNMC/processed/Case12.nii and ./data/RUNMC/processed/Case12_segmentation.nii
+Processing ./data/RUNMC/processed/Case01.nii and ./data/RUNMC/processed/Case01_segmentation.nii
+Processing ./data/RUNMC/processed/Case04.nii and ./data/RUNMC/processed/Case04_segmentation.nii
+Processing ./data/RUNMC/processed/Case14.nii and ./data/RUNMC/processed/Case14_segmentation.nii
+Processing ./data/RUNMC/processed/Case06.nii and ./data/RUNMC/processed/Case06_segmentation.nii
+Processing ./data/RUNMC/processed/Case16.nii and ./data/RUNMC/processed/Case16_segmentation.nii
+Processing ./data/RUNMC/processed/Case10.nii and ./data/RUNMC/processed/Case10_segmentation.nii
+Processing ./data/BIDMC/processed/Case11.nii and ./data/BIDMC/processed/Case11_segmentation.nii
+Processing ./data/BIDMC/processed/Case09.nii and ./data/BIDMC/processed/Case09_segmentation.nii
+Processing ./data/BIDMC/processed/Case02.nii and ./data/BIDMC/processed/Case02_segmentation.nii
+Processing ./data/BIDMC/processed/Case05.nii and ./data/BIDMC/processed/Case05_segmentation.nii
+Processing ./data/BIDMC/processed/Case07.nii and ./data/BIDMC/processed/Case07_segmentation.nii
+Processing ./data/BIDMC/processed/Case03.nii and ./data/BIDMC/processed/Case03_segmentation.nii
+Processing ./data/BIDMC/processed/Case00.nii and ./data/BIDMC/processed/Case00_segmentation.nii
+Processing ./data/BIDMC/processed/Case08.nii and ./data/BIDMC/processed/Case08_segmentation.nii
+Processing ./data/BIDMC/processed/Case12.nii and ./data/BIDMC/processed/Case12_segmentation.nii
+Processing ./data/BIDMC/processed/Case04.nii and ./data/BIDMC/processed/Case04_segmentation.nii
+Processing ./data/BIDMC/processed/Case06.nii and ./data/BIDMC/processed/Case06_segmentation.nii
+Processing ./data/BIDMC/processed/Case10.nii and ./data/BIDMC/processed/Case10_segmentation.nii
+UCL folder found, skipping...
+Total number of cases loaded: 73
+
+==================================================
+Starting Fold 1/5
+==================================================
+Number of training cases in fold 1: 58
+Number of validation cases in fold 1: 15
+Fold 1, Epoch 1/30, Train Loss: 0.4292, Val Loss: 0.3497
+Model saved at epoch 1
+Fold 1, Epoch 2/30, Train Loss: 0.3128, Val Loss: 0.2799
+Model saved at epoch 2
+Fold 1, Epoch 3/30, Train Loss: 0.2592, Val Loss: 0.2434
+Model saved at epoch 3
+Fold 1, Epoch 4/30, Train Loss: 0.2137, Val Loss: 0.1951
+Model saved at epoch 4
+Fold 1, Epoch 5/30, Train Loss: 0.1736, Val Loss: 0.1561
+Model saved at epoch 5
+Fold 1, Epoch 6/30, Train Loss: 0.1433, Val Loss: 0.1311
+Model saved at epoch 6
+Fold 1, Epoch 7/30, Train Loss: 0.1195, Val Loss: 0.1124
+Model saved at epoch 7
+Fold 1, Epoch 8/30, Train Loss: 0.0997, Val Loss: 0.0959
+Model saved at epoch 8
+Fold 1, Epoch 9/30, Train Loss: 0.0844, Val Loss: 0.0824
+Model saved at epoch 9
+Fold 1, Epoch 10/30, Train Loss: 0.0727, Val Loss: 0.0702
+Model saved at epoch 10
+Fold 1, Epoch 11/30, Train Loss: 0.0619, Val Loss: 0.0609
+Model saved at epoch 11
+Fold 1, Epoch 12/30, Train Loss: 0.0531, Val Loss: 0.0584
+Model saved at epoch 12
+Fold 1, Epoch 13/30, Train Loss: 0.0461, Val Loss: 0.0506
+Model saved at epoch 13
+Fold 1, Epoch 14/30, Train Loss: 0.0402, Val Loss: 0.0444
+Model saved at epoch 14
+Fold 1, Epoch 15/30, Train Loss: 0.0358, Val Loss: 0.0395
+Model saved at epoch 15
+Fold 1, Epoch 16/30, Train Loss: 0.0316, Val Loss: 0.0355
+Model saved at epoch 16
+Fold 1, Epoch 17/30, Train Loss: 0.0291, Val Loss: 0.0397
+Fold 1, Epoch 18/30, Train Loss: 0.0262, Val Loss: 0.0372
+Fold 1, Epoch 19/30, Train Loss: 0.0233, Val Loss: 0.0293
+Model saved at epoch 19
+Fold 1, Epoch 20/30, Train Loss: 0.0213, Val Loss: 0.0315
+Fold 1, Epoch 21/30, Train Loss: 0.0189, Val Loss: 0.0249
+Model saved at epoch 21
+Fold 1, Epoch 22/30, Train Loss: 0.0169, Val Loss: 0.0260
+Fold 1, Epoch 23/30, Train Loss: 0.0153, Val Loss: 0.0274
+Fold 1, Epoch 24/30, Train Loss: 0.0142, Val Loss: 0.0246
+Model saved at epoch 24
+Fold 1, Epoch 25/30, Train Loss: 0.0131, Val Loss: 0.0222
+Model saved at epoch 25
+Fold 1, Epoch 26/30, Train Loss: 0.0118, Val Loss: 0.0228
+Fold 1, Epoch 27/30, Train Loss: 0.0111, Val Loss: 0.0217
+Model saved at epoch 27
+Fold 1, Epoch 28/30, Train Loss: 0.0102, Val Loss: 0.0206
+Model saved at epoch 28
+Fold 1, Epoch 29/30, Train Loss: 0.0098, Val Loss: 0.0234
+Fold 1, Epoch 30/30, Train Loss: 0.0093, Val Loss: 0.0187
+Model saved at epoch 30
+
+==================================================
+Starting Fold 2/5
+==================================================
+Number of training cases in fold 2: 58
+Number of validation cases in fold 2: 15
+Fold 2, Epoch 1/30, Train Loss: 0.2980, Val Loss: 0.2404
+Model saved at epoch 1
+Fold 2, Epoch 2/30, Train Loss: 0.2053, Val Loss: 0.1927
+Model saved at epoch 2
+Fold 2, Epoch 3/30, Train Loss: 0.1555, Val Loss: 0.1402
+Model saved at epoch 3
+Fold 2, Epoch 4/30, Train Loss: 0.1216, Val Loss: 0.1157
+Model saved at epoch 4
+Fold 2, Epoch 5/30, Train Loss: 0.0973, Val Loss: 0.0887
+Model saved at epoch 5
+Fold 2, Epoch 6/30, Train Loss: 0.0784, Val Loss: 0.0739
+Model saved at epoch 6
+Fold 2, Epoch 7/30, Train Loss: 0.0650, Val Loss: 0.0630
+Model saved at epoch 7
+Fold 2, Epoch 8/30, Train Loss: 0.0546, Val Loss: 0.0546
+Model saved at epoch 8
+Fold 2, Epoch 9/30, Train Loss: 0.0470, Val Loss: 0.0455
+Model saved at epoch 9
+Fold 2, Epoch 10/30, Train Loss: 0.0397, Val Loss: 0.0380
+Model saved at epoch 10
+Fold 2, Epoch 11/30, Train Loss: 0.0342, Val Loss: 0.0357
+Model saved at epoch 11
+Fold 2, Epoch 12/30, Train Loss: 0.0294, Val Loss: 0.0336
+Model saved at epoch 12
+Fold 2, Epoch 13/30, Train Loss: 0.0260, Val Loss: 0.0296
+Model saved at epoch 13
+Fold 2, Epoch 14/30, Train Loss: 0.0233, Val Loss: 0.0270
+Model saved at epoch 14
+Fold 2, Epoch 15/30, Train Loss: 0.0207, Val Loss: 0.0275
+Fold 2, Epoch 16/30, Train Loss: 0.0184, Val Loss: 0.0223
+Model saved at epoch 16
+Fold 2, Epoch 17/30, Train Loss: 0.0166, Val Loss: 0.0230
+Fold 2, Epoch 18/30, Train Loss: 0.0174, Val Loss: 0.0216
+Model saved at epoch 18
+Fold 2, Epoch 19/30, Train Loss: 0.0140, Val Loss: 0.0194
+Model saved at epoch 19
+Fold 2, Epoch 20/30, Train Loss: 0.0126, Val Loss: 0.0192
+Model saved at epoch 20
+Fold 2, Epoch 21/30, Train Loss: 0.0116, Val Loss: 0.0191
+Model saved at epoch 21
+Fold 2, Epoch 22/30, Train Loss: 0.0107, Val Loss: 0.0177
+Model saved at epoch 22
+Fold 2, Epoch 23/30, Train Loss: 0.0103, Val Loss: 0.0184
+Fold 2, Epoch 24/30, Train Loss: 0.0090, Val Loss: 0.0171
+Model saved at epoch 24
+Fold 2, Epoch 25/30, Train Loss: 0.0085, Val Loss: 0.0185
+Fold 2, Epoch 26/30, Train Loss: 0.0090, Val Loss: 0.0208
+Fold 2, Epoch 27/30, Train Loss: 0.0091, Val Loss: 0.0152
+Model saved at epoch 27
+Fold 2, Epoch 28/30, Train Loss: 0.0071, Val Loss: 0.0165
+Fold 2, Epoch 29/30, Train Loss: 0.0071, Val Loss: 0.0149
+Model saved at epoch 29
+Fold 2, Epoch 30/30, Train Loss: 0.0064, Val Loss: 0.0160
+
+==================================================
+Starting Fold 3/5
+==================================================
+Number of training cases in fold 3: 58
+Number of validation cases in fold 3: 15
+Fold 3, Epoch 1/30, Train Loss: 0.3182, Val Loss: 0.2616
+Model saved at epoch 1
+Fold 3, Epoch 2/30, Train Loss: 0.2208, Val Loss: 0.1964
+Model saved at epoch 2
+Fold 3, Epoch 3/30, Train Loss: 0.1714, Val Loss: 0.1589
+Model saved at epoch 3
+Fold 3, Epoch 4/30, Train Loss: 0.1355, Val Loss: 0.1264
+Model saved at epoch 4
+Fold 3, Epoch 5/30, Train Loss: 0.1088, Val Loss: 0.1101
+Model saved at epoch 5
+Fold 3, Epoch 6/30, Train Loss: 0.0899, Val Loss: 0.0897
+Model saved at epoch 6
+Fold 3, Epoch 7/30, Train Loss: 0.0745, Val Loss: 0.0773
+Model saved at epoch 7
+Fold 3, Epoch 8/30, Train Loss: 0.0621, Val Loss: 0.0660
+Model saved at epoch 8
+Fold 3, Epoch 9/30, Train Loss: 0.0524, Val Loss: 0.0634
+Model saved at epoch 9
+Fold 3, Epoch 10/30, Train Loss: 0.0451, Val Loss: 0.0578
+Model saved at epoch 10
+Fold 3, Epoch 11/30, Train Loss: 0.0387, Val Loss: 0.0477
+Model saved at epoch 11
+Fold 3, Epoch 12/30, Train Loss: 0.0343, Val Loss: 0.0476
+Model saved at epoch 12
+Fold 3, Epoch 13/30, Train Loss: 0.0304, Val Loss: 0.0400
+Model saved at epoch 13
+Fold 3, Epoch 14/30, Train Loss: 0.0266, Val Loss: 0.0473
+Fold 3, Epoch 15/30, Train Loss: 0.0236, Val Loss: 0.0340
+Model saved at epoch 15
+Fold 3, Epoch 16/30, Train Loss: 0.0214, Val Loss: 0.0439
+Fold 3, Epoch 17/30, Train Loss: 0.0202, Val Loss: 0.0463
+Fold 3, Epoch 18/30, Train Loss: 0.0183, Val Loss: 0.0335
+Model saved at epoch 18
+Fold 3, Epoch 19/30, Train Loss: 0.0154, Val Loss: 0.0310
+Model saved at epoch 19
+Fold 3, Epoch 20/30, Train Loss: 0.0142, Val Loss: 0.0386
+Fold 3, Epoch 21/30, Train Loss: 0.0130, Val Loss: 0.0304
+Model saved at epoch 21
+Fold 3, Epoch 22/30, Train Loss: 0.0118, Val Loss: 0.0279
+Model saved at epoch 22
+Fold 3, Epoch 23/30, Train Loss: 0.0108, Val Loss: 0.0313
+Fold 3, Epoch 24/30, Train Loss: 0.0118, Val Loss: 0.0306
+Fold 3, Epoch 25/30, Train Loss: 0.0112, Val Loss: 0.0338
+Fold 3, Epoch 26/30, Train Loss: 0.0093, Val Loss: 0.0346
+Fold 3, Epoch 27/30, Train Loss: 0.0086, Val Loss: 0.0299
+Early stopping at epoch 27! No improvement for 5 epochs.
+
+==================================================
+Starting Fold 4/5
+==================================================
+Number of training cases in fold 4: 59
+Number of validation cases in fold 4: 14
+Fold 4, Epoch 1/30, Train Loss: 0.2517, Val Loss: 0.2363
+Model saved at epoch 1
+Fold 4, Epoch 2/30, Train Loss: 0.1690, Val Loss: 0.1444
+Model saved at epoch 2
+Fold 4, Epoch 3/30, Train Loss: 0.1262, Val Loss: 0.1300
+Model saved at epoch 3
+Fold 4, Epoch 4/30, Train Loss: 0.0980, Val Loss: 0.0958
+Model saved at epoch 4
+Fold 4, Epoch 5/30, Train Loss: 0.0790, Val Loss: 0.0813
+Model saved at epoch 5
+Fold 4, Epoch 6/30, Train Loss: 0.0653, Val Loss: 0.0690
+Model saved at epoch 6
+Fold 4, Epoch 7/30, Train Loss: 0.0530, Val Loss: 0.0619
+Model saved at epoch 7
+Fold 4, Epoch 8/30, Train Loss: 0.0457, Val Loss: 0.0559
+Model saved at epoch 8
+Fold 4, Epoch 9/30, Train Loss: 0.0376, Val Loss: 0.0488
+Model saved at epoch 9
+Fold 4, Epoch 10/30, Train Loss: 0.0327, Val Loss: 0.0479
+Model saved at epoch 10
+Fold 4, Epoch 11/30, Train Loss: 0.0285, Val Loss: 0.0394
+Model saved at epoch 11
+Fold 4, Epoch 12/30, Train Loss: 0.0246, Val Loss: 0.0362
+Model saved at epoch 12
+Fold 4, Epoch 13/30, Train Loss: 0.0232, Val Loss: 0.0423
+Fold 4, Epoch 14/30, Train Loss: 0.0210, Val Loss: 0.0376
+Fold 4, Epoch 15/30, Train Loss: 0.0192, Val Loss: 0.0344
+Model saved at epoch 15
+Fold 4, Epoch 16/30, Train Loss: 0.0158, Val Loss: 0.0302
+Model saved at epoch 16
+Fold 4, Epoch 17/30, Train Loss: 0.0153, Val Loss: 0.0296
+Model saved at epoch 17
+Fold 4, Epoch 18/30, Train Loss: 0.0138, Val Loss: 0.0304
+Fold 4, Epoch 19/30, Train Loss: 0.0121, Val Loss: 0.0330
+Fold 4, Epoch 20/30, Train Loss: 0.0113, Val Loss: 0.0334
+Fold 4, Epoch 21/30, Train Loss: 0.0099, Val Loss: 0.0287
+Model saved at epoch 21
+Fold 4, Epoch 22/30, Train Loss: 0.0091, Val Loss: 0.0287
+Model saved at epoch 22
+Fold 4, Epoch 23/30, Train Loss: 0.0084, Val Loss: 0.0278
+Model saved at epoch 23
+Fold 4, Epoch 24/30, Train Loss: 0.0077, Val Loss: 0.0287
+Fold 4, Epoch 25/30, Train Loss: 0.0072, Val Loss: 0.0311
+Fold 4, Epoch 26/30, Train Loss: 0.0074, Val Loss: 0.0250
+Model saved at epoch 26
+Fold 4, Epoch 27/30, Train Loss: 0.0067, Val Loss: 0.0247
+Model saved at epoch 27
+Fold 4, Epoch 28/30, Train Loss: 0.0088, Val Loss: 0.0337
+Fold 4, Epoch 29/30, Train Loss: 0.0070, Val Loss: 0.0284
