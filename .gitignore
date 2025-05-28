@@ -1,0 +1,7 @@
+data/*
+nifti_results/*
+visualizations/*
+outputs/*
+*.pth
+*.npy
+unet_model_best.pth
