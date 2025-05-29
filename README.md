@@ -61,19 +61,13 @@ The results of the Training Loss and testing loss as provided below. In this cas
 <img src="./cross_validation_results.png" alt="Cross-validation results" width="700" />
 </div>
 For Metrics I used common ones mention in imaging papers, namely the DICE score
-$$
-DICE = \frac{2 |A \cap B|}{|A| + |B|} 
-$$
+$$DICE = \frac{2 |A \cap B|}{|A| + |B|}$$
 Where the numerator is 2 times the number of overlapping pixels, over the total number of pixels. A DICE score of 1 indicates a perfect overlap. 
 
 The Intersection over union which is given by 
-$$
-IOU = \frac{\text{TP}}{\text{TP + FP + FN}}
-$$
+$$IOU = \frac{\text{TP}}{\text{TP + FP + FN}}$$
 And the sensitivity which is given by 
-$$
-S = \frac{\text{TP}}{\text{TP + FN}}
-$$
+$$S = \frac{\text{TP}}{\text{TP + FN}}$$
 These results are summarized in the `evaluation_results.csv`file. The generated masks and the resampled input images are exported as .nii files so it can be visualized in 3D image slice. 
 ./mo.pth).pth)# prostate-segmentation-task
 Repository to store code for segmenting prostate tumors from MRI images for the Bhattacharya lab. 
