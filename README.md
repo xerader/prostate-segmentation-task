@@ -1,4 +1,5 @@
 # Task 
+The initial task for this stage is provided as follows:
 ```
 
 The green outline is the prostate gland segmentation label, that your model will be trained to predict.
@@ -20,10 +21,9 @@ regarding this round of the interview.
 ```
 
 # Method
-1. Perform a brief literature review to establish approaches in the field
-https://pmc.ncbi.nlm.nih.gov/articles/PMC8870978/#ref-list1
-https://simpleitk.readthedocs.io/en/v1.2.4/Documentation/docs/source/fundamentalConcepts.html#resampling
-Documentation for simpleITK and the simpleITK jupyter notebooks were helpful for later coding parts
+1. Perform a brief [literature review](https://pmc.ncbi.nlm.nih.gov/articles/PMC8870978/#ref-list1) to establish approaches in the field
+[Documentation](https://simpleitk.readthedocs.io/en/v1.2.4/Documentation/docs/source/fundamentalConcepts.html#resampling
+) for simpleITK and the simpleITK jupyter notebooks were helpful for later coding parts
 
 2. Exploratory analysis with coding, working with 3D slicer, and working with simpleITK 
 3. Implementing a simple UNET for results
