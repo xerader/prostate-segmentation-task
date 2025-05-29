@@ -5,3 +5,5 @@ outputs/*
 *.pth
 *.npy
 unet_model_best.pth
+*.err
+*.out

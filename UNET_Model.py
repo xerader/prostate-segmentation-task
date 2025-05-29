@@ -103,7 +103,7 @@ def resample_image(image, target_size=(256, 256), is_mask=False):
         original_spacing[1] * original_size[1] / new_size[1],
         original_spacing[2]
     ]
-    
+   
     # Set interpolator
     interpolator = sitk.sitkNearestNeighbor if is_mask else sitk.sitkLinear
     
@@ -167,7 +167,7 @@ def load_and_preprocess_data(data_dir='./data', target_size=(256, 256)):
     images = np.expand_dims(images, axis=1)
     masks = np.expand_dims(masks, axis=1)
     return images.astype(np.float32), masks.astype(np.float32)
-# %%
+    
 # Load and preprocess the data
 print("Loading and preprocessing data...", flush=True)
 

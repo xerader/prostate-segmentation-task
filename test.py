@@ -8,6 +8,8 @@ import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import Dataset, DataLoader
 import SimpleITK as sitk
+import pandas as pd
+
 
 from models import UNet
 from data_structures import MedicalImage, SliceDataset
@@ -145,38 +147,65 @@ def run_inference(model, case, batch_size=16):
                     predictions[slice_idx] = output[0].cpu().numpy()
                     processed_slices.add(slice_idx)
     
-    # Verify all slices were processed
-    all_slices = set(range(len(case)))
-    if processed_slices != all_slices:
-        missing = all_slices - processed_slices
-        print(f"Warning: Slices {missing} were not processed for case {case.id}")
-    
     # Store predictions in the case object
     case.generated_mask = predictions
     return case
 
 def evaluate_results(cases):
-    """Evaluate Dice scores for all cases"""
+    """Evaluate Dice scores, IoU scores, and sensitivity for all cases"""
     dice_scores = []
+    iou_scores = []
+    sensitivity_scores = []
     
     for case in cases:
+        # Calculate Dice coefficient
         dice = case.calculate_dice()
-        if dice is not None:
+        
+        # Calculate IoU and Sensitivity
+        if case.generated_mask is not None:
+            # Threshold predictions
+            pred_binary = (case.generated_mask > 0.5).astype(np.float32)
+            true_binary = case.mask.astype(np.float32)
+            
+            # Flatten arrays for calculations
+            y_true_f = true_binary.flatten()
+            y_pred_f = pred_binary.flatten()
+            
+            # Calculate true positives, false negatives, etc.
+            smooth = 1e-6  # Smoothing factor to avoid division by zero
+            
+            true_positives = np.sum(y_true_f * y_pred_f)
+            false_positives = np.sum(y_pred_f) - true_positives
+            false_negatives = np.sum(y_true_f) - true_positives
+            
+            # IoU = TP / (TP + FP + FN)
+            iou = (true_positives + smooth) / (true_positives + false_positives + false_negatives + smooth)
+            
+            # Sensitivity/Recall = TP / (TP + FN)
+            sensitivity = (true_positives + smooth) / (true_positives + false_negatives + smooth)
+            
             dice_scores.append(dice)
-            print(f"Case {case.id} Dice: {dice:.4f}")
+            iou_scores.append(iou)
+            sensitivity_scores.append(sensitivity)
+            
+            print(f"Case {case.id} - Dice: {dice:.4f}, IoU: {iou:.4f}, Sensitivity: {sensitivity:.4f}")
+            
+    # save into dataframe
+    results_df = pd.DataFrame({
+        'case_id': [case.id for case in cases],
+        'dice_score': dice_scores,
+        'iou_score': iou_scores,
+        'sensitivity_score': sensitivity_scores
+    })
+    results_df.to_csv('evaluation_results.csv', index=False)
     
-    # Print overall statistics
-    if dice_scores:
-        print(f"\nOverall Dice (mean): {np.mean(dice_scores):.4f}")
-        print(f"Overall Dice (median): {np.median(dice_scores):.4f}")
-        print(f"Dice range: {np.min(dice_scores):.4f} - {np.max(dice_scores):.4f}")
-    
-    return dice_scores
+    return results_df        
+
 
 def main():
     # Load model
     model = UNet().to(device)
-    model.load_state_dict(torch.load('unet_model_fold1_best.pth', map_location=device))
+    model.load_state_dict(torch.load('unet_model_best.pth', map_location=device))
     
     # Load test data
     test_cases = load_and_preprocess_test_data()
