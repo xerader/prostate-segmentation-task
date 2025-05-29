@@ -76,3 +76,20 @@ And the sensitivity which is given by
 $$S = \frac{\text{TP}}{\text{TP + FN}}$$
 These results are summarized in the `evaluation_results.csv`file. The generated masks and the resampled input images are exported as .nii files so it can be visualized in 3D image slice. 
 
+
+| Case ID | Dice Score | IoU Score | Sensitivity Score |
+|---------|------------|-----------|------------------|
+| Case32  | 0.6103     | 0.4391    | 0.4406          |
+| Case31  | 0.5925     | 0.4210    | 0.4277          |
+| Case27  | 0.6538     | 0.4856    | 0.4915          |
+| Case26  | 0.6878     | 0.5242    | 0.5268          |
+| Case33  | 0.6090     | 0.4378    | 0.4569          |
+| Case30  | 0.6452     | 0.4762    | 0.4813          |
+| Case29  | 0.7275     | 0.5717    | 0.5751          |
+| Case28  | 0.7785     | 0.6373    | 0.6505          |
+| Case36  | 0.5222     | 0.3534    | 0.3543          |
+| Case37  | 0.6297     | 0.4595    | 0.4605          |
+| Case34  | **0.8604** | **0.7550**| **0.8134**      |
+| Case01  | 0.6515     | 0.4831    | 0.4866          |
+| Case35  | 0.8481     | 0.7362    | 0.7484          |
+| **Mean**| **0.6782** | **0.5215**| **0.5318**      |
