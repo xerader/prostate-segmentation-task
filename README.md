@@ -52,6 +52,12 @@ The model with the best validation loss was chosen, and the final parameters wer
 
 Training was done on the BIDMC, BMC, HK, I2CVB, and RUNMC datasets. The UCL dataset was used for testing. 73 cases were used for training + validation. Of these 58 were used for training and 15 for validation.  13 were used for testing.
 
+Training was done using Dartmouth's Discovery cluster. The bash script use is provided in `runmode.sh`. To recreate the results, the following code can be executed
+
+```
+sbatch runmode.sh
+```
+
 ## Model Architecture
 The [UNET](https://paperswithcode.com/method/u-net) model was used in this case. Code was adopted from the linked paper, and also by using Claude and GitHub Copilot. 
 
