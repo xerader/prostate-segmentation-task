@@ -67,7 +67,10 @@ The results of the Training Loss and testing loss as provided below. In this cas
 <img src="./cross_validation_results.png" alt="Cross-validation results" width="700" />
 </div>
 For Metrics I used common ones mention in imaging papers, namely the DICE score
+
+
 $$DICE = \frac{2 |A \cap B|}{|A| + |B|}$$
+
 Where the numerator is 2 times the number of overlapping pixels, over the total number of pixels. A DICE score of 1 indicates a perfect overlap. 
 
 The Intersection over union which is given by 
