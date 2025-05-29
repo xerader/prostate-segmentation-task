@@ -74,9 +74,13 @@ $$DICE = \frac{2 |A \cap B|}{|A| + |B|}$$
 Where the numerator is 2 times the number of overlapping pixels, over the total number of pixels. A DICE score of 1 indicates a perfect overlap. 
 
 The Intersection over union which is given by 
+
 $$IOU = \frac{\text{TP}}{\text{TP + FP + FN}}$$
+
 And the sensitivity which is given by 
+
 $$S = \frac{\text{TP}}{\text{TP + FN}}$$
+
 These results are summarized in the `evaluation_results.csv`file. The generated masks and the resampled input images are exported as .nii files so it can be visualized in 3D image slice. 
 
 
