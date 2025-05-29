@@ -69,6 +69,4 @@ $$IOU = \frac{\text{TP}}{\text{TP + FP + FN}}$$
 And the sensitivity which is given by 
 $$S = \frac{\text{TP}}{\text{TP + FN}}$$
 These results are summarized in the `evaluation_results.csv`file. The generated masks and the resampled input images are exported as .nii files so it can be visualized in 3D image slice. 
-./mo.pth).pth)# prostate-segmentation-task
-Repository to store code for segmenting prostate tumors from MRI images for the Bhattacharya lab. 
-./mo.pth)
+
